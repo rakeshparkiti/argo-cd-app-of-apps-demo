@@ -8,10 +8,10 @@ spec:
     namespace: argocd
   source:
     path: apps
-    repoURL: 'https://github.com/morey-tech/argo-cd-app-of-apps-demo'
+    repoURL: 'https://github.com/rakeshparkiti/argo-cd-app-of-apps-demo.git
     targetRevision: HEAD
   project: default
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
