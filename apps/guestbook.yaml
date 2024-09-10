@@ -11,8 +11,8 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: general/helm-guestbook
-    repoURL: https://github.com/morey-tech/argocd-example-apps
+    path: helm-guestbook
+    repoURL: https://github.com/argoproj/argocd-example-apps.git
     targetRevision: HEAD
   syncPolicy:
     automated:
